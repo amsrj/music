@@ -64,7 +64,7 @@ body {
 .wheel {
   position: absolute;
   inset: 0;
-  --distance: -200px;
+  --distance: -400px;
   border-radius: 50%;
 
   animation-name: spin;
@@ -73,8 +73,6 @@ body {
 
   /* 등속도로 만듦 */
   animation-timing-function: linear;
-  
-  border-radius: 0;
 }
 
 .wheel-item img {
@@ -90,7 +88,7 @@ body {
 }
 
 .wheel:hover {
-  --distance: -300px;
+  --distance: -200px;
 }
 
 .wheel-item {
@@ -108,7 +106,7 @@ body {
   margin-left: -30px;
   margin-top: -30px;
 
-  transition: transform .4s;
+  transition: transform .4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* 모든 wheel-item은 화면중간에서 시작!, rotate로 진행 방향을 틀어서 -200px만큼 이동! */
@@ -161,3 +159,27 @@ body {
     rotate(0deg); 
 }
 
+.wheel:hover .wheel-item:nth-child(1) {
+  transition-delay: .1s;
+}
+.wheel:hover .wheel-item:nth-child(2) {
+  transition-delay: .2s;
+}
+.wheel:hover .wheel-item:nth-child(3) {
+  transition-delay: .3s;
+}
+.wheel:hover .wheel-item:nth-child(4) {
+  transition-delay: .4s;
+}
+.wheel:hover .wheel-item:nth-child(5) {
+  transition-delay: .5s;
+}
+.wheel:hover .wheel-item:nth-child(6) {
+  transition-delay: .6s;
+}
+.wheel:hover .wheel-item:nth-child(7) {
+  transition-delay: .7s;
+}
+.wheel:hover .wheel-item:nth-child(8) {
+  transition-delay: .8s;
+}
