@@ -71,7 +71,8 @@ body {
   animation-duration: 10s;
   animation-iteration-count: infinite;
 
-  /* 전체는 빨랐다가 느려지는 easing이 셋팅 되어있음 */
+  /* 등속도로 만듦 */
+  animation-timing-function: linear;
   
   border-radius: 0;
   box-shadow: 0 0 20px blue;
@@ -82,8 +83,10 @@ body {
   animation-duration: 10s;
   animation-iteration-count: infinite;
 
-  /* 리버스 되었기 때문에 내부 요소는 느렸다가 빨라짐 */
   animation-direction: reverse;
+
+  /* 등속도로 만듦 */
+  animation-timing-function: linear;
 
   box-shadow: 0 0 20px red;
 }
