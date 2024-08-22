@@ -64,6 +64,7 @@ body {
 
   /* 모든 wheel-item이 몽땅 가운데로 옮겨지게! */
   position: absolute;
-  inset: 0;
-  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
