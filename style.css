@@ -56,6 +56,8 @@ body {
 }
 
 .wheel-item {
+  border-top: 10px solid red;
+
   width: 60px;
   height: 60px;
 
@@ -68,11 +70,11 @@ body {
 }
 
 /* 모든 wheel-item은 화면중간에서 시작!, rotate로 진행 방향을 틀어서 -200px만큼 이동! */
-.wheel-item:nth-child(1) { transform: rotate(315deg) translateY(-200px); }
-.wheel-item:nth-child(2) { transform: rotate(270deg) translateY(-200px); }
-.wheel-item:nth-child(3) { transform: rotate(225deg) translateY(-200px); }
-.wheel-item:nth-child(4) { transform: rotate(180deg) translateY(-200px); }
-.wheel-item:nth-child(5) { transform: rotate(135deg) translateY(-200px); }
-.wheel-item:nth-child(6) { transform: rotate(90deg)  translateY(-200px); }
-.wheel-item:nth-child(7) { transform: rotate(45deg)  translateY(-200px); }
-.wheel-item:nth-child(8) { transform: rotate(0deg)   translateY(-200px); }
+.wheel-item:nth-child(1) { transform: rotate(315deg) translateY(-200px) rotate(-315deg); }
+.wheel-item:nth-child(2) { transform: rotate(270deg) translateY(-200px) rotate(-270deg); }
+.wheel-item:nth-child(3) { transform: rotate(225deg) translateY(-200px) rotate(-225deg); }
+.wheel-item:nth-child(4) { transform: rotate(180deg) translateY(-200px) rotate(-180deg); }
+.wheel-item:nth-child(5) { transform: rotate(135deg) translateY(-200px) rotate(-135deg); }
+.wheel-item:nth-child(6) { transform: rotate(90deg)  translateY(-200px) rotate(-90deg); }
+.wheel-item:nth-child(7) { transform: rotate(45deg)  translateY(-200px) rotate(-45deg); }
+.wheel-item:nth-child(8) { transform: rotate(0deg)   translateY(-200px) rotate(0deg); }
