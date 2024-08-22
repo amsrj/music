@@ -71,3 +71,6 @@ body {
   margin-left: -30px;
   margin-top: -30px;
 }
+
+.wheel-item:nth-child(7) { transform: rotate(45deg) translateY(-200px); }
+.wheel-item:nth-child(8) { transform: rotate(0deg)  translateY(-200px); }
